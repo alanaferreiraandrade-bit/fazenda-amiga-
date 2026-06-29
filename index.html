@@ -1,19 +1,128 @@
-<button id="menu-btn">☰ Menu</button>
 
-<nav id="menu">
-    <a href="#inicio">Início</a>
-    <a href="#animais">Animais</a>
-    <a href="#plantacao">Plantação</a>
-    <a href="#contato">Contato</a>
-</nav>
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fazenda Amiga</title>
 
-<section>
-    <h2>Curiosidades da Fazenda</h2>
-    <button id="btnCuriosidade">Mostrar Curiosidade</button>
-    <p id="curiosidade"></p>
-</section>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<footer>
-    <p id="contador"></p>
-    <p>&copy; <span id="ano"></span> Fazenda Amiga</p>
-</footer>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>🌾 Fazenda Amiga 🌾</h1>
+        <p>Conectando pessoas ao campo com respeito à natureza.</p>
+    </header>
+
+    <!-- Menu -->
+    <nav>
+        <button id="menu-btn">☰ Menu</button>
+
+        <ul id="menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#animais">Animais</a></li>
+            <li><a href="#plantacao">Plantação</a></li>
+            <li><a href="#curiosidades">Curiosidades</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- Conteúdo -->
+    <main>
+
+        <!-- Início -->
+        <section id="inicio" class="card">
+            <h2>Bem-vindo!</h2>
+            <p>
+                A Fazenda Amiga é um espaço dedicado à valorização da vida no campo,
+                da agricultura sustentável e do cuidado com os animais.
+            </p>
+
+            <a href="#contato" class="btn">Entre em Contato</a>
+        </section>
+
+        <!-- Animais -->
+        <section id="animais" class="card">
+            <h2>🐄 Nossos Animais</h2>
+
+            <div class="galeria">
+                <img src="https://picsum.photos/400/250?random=1" alt="Vaca">
+                <img src="https://picsum.photos/400/250?random=2" alt="Galinha">
+                <img src="https://picsum.photos/400/250?random=3" alt="Cavalo">
+            </div>
+
+            <p>
+                Na Fazenda Amiga, os animais recebem alimentação adequada,
+                espaço para viver e cuidados diários.
+            </p>
+        </section>
+
+        <!-- Plantação -->
+        <section id="plantacao" class="card">
+            <h2>🌽 Plantação</h2>
+
+            <p>
+                Cultivamos milho, feijão, hortaliças e frutas utilizando práticas
+                que respeitam o meio ambiente.
+            </p>
+        </section>
+
+        <!-- Curiosidades -->
+        <section id="curiosidades" class="card">
+            <h2>🌻 Curiosidades</h2>
+
+            <button id="btnCuriosidade" class="btn">
+                Mostrar Curiosidade
+            </button>
+
+            <p id="curiosidade"></p>
+        </section>
+
+        <!-- Contato -->
+        <section id="contato" class="card">
+            <h2>📩 Contato</h2>
+
+            <form>
+
+                <label>Nome</label><br>
+                <input type="text" placeholder="Digite seu nome" required>
+
+                <br><br>
+
+                <label>E-mail</label><br>
+                <input type="email" placeholder="Digite seu e-mail" required>
+
+                <br><br>
+
+                <label>Mensagem</label><br>
+                <textarea rows="5" placeholder="Escreva sua mensagem"></textarea>
+
+                <br><br>
+
+                <button class="btn">
+                    Enviar
+                </button>
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <p id="contador"></p>
+
+        <p>
+            © <span id="ano"></span> Fazenda Amiga - Todos os direitos reservados.
+        </p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+</html>
